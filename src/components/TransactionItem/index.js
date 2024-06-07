@@ -7,11 +7,11 @@ const TransactionItem = props => {
     onDel(id)
   }
   return (
-    <li>
+    <li style={{textAlign: 'center'}}>
       <p style={{paddingRight: '40px', width: '6vw'}}>{title}</p>
-      <p style={{paddingRight: '40px'}}>{amount}</p>
+      <p style={{paddingRight: '40px', width: '5vw'}}>{amount}</p>
       <p style={{paddingRight: '10px'}}>{type}</p>
-      <button type="button" data-testId="delete">
+      <button type="button" data-testid="delete">
         <img
           src="https://assets.ccbp.in/frontend/react-js/money-manager/delete.png"
           alt="delete"
