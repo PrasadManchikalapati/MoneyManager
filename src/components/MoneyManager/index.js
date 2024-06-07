@@ -103,9 +103,10 @@ class MoneyManager extends Component {
           <div className="form">
             <form onSubmit={this.changeState}>
               <h1 style={{color: '#1e293b'}}>Add Transaction</h1>
-              <p htmlFor="title" style={{fontSize: '13px'}}>
+              <label htmlFor="title" style={{fontSize: '13px'}}>
                 TITLE
-              </p>
+              </label>
+              <br />
               <input
                 type="text"
                 id="title"
@@ -114,9 +115,11 @@ class MoneyManager extends Component {
                 onChange={this.changeTitle}
                 value={title}
               />
-              <p htmlFor="amount" style={{fontSize: '13px'}}>
+              <br />
+              <label htmlFor="amount" style={{fontSize: '13px'}}>
                 AMOUNT
-              </p>
+              </label>
+              <br />
 
               <input
                 type="text"
@@ -127,7 +130,8 @@ class MoneyManager extends Component {
                 value={amount}
               />
               <br />
-              <p htmlFor="type">TYPE</p>
+              <label htmlFor="type">TYPE</label>
+              <br />
               <select
                 id="type"
                 style={{width: '11vw', padding: '5px'}}
@@ -151,7 +155,7 @@ class MoneyManager extends Component {
               <ul>
                 <li>
                   <p style={{paddingRight: '40px', width: '5vw'}}>Title</p>
-                  <p style={{paddingRight: '40px'}}>Amount</p>
+                  <p style={{paddingRight: '50px', width: '5vw'}}>Amount</p>
                   <p style={{paddingRight: '10px'}}>Type</p>
                 </li>
                 {tableList.map(each => (
